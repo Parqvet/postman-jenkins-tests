@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "7e65feef-b4dc-44be-9fd9-5234eb858c36",
+		"name": "Accom Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Accom Argentina",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.assistcard.com/1234",
+					"protocol": "https",
+					"host": [
+						"www",
+						"assistcard",
+						"com"
+					],
+					"path": [
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accom Brasil",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.assistcard.com/br",
+					"protocol": "https",
+					"host": [
+						"www",
+						"assistcard",
+						"com"
+					],
+					"path": [
+						"br"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
